@@ -9,6 +9,13 @@ body {
     color: white;
 }
 
+/* Make images responsive and prevent overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Top Navigation */
 .top-nav {
     background: linear-gradient(90deg, #0077b6 0%, #0096c7 50%, #0077b6 100%);
