@@ -1,56 +1,118 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Ocean Invertebrates</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #001f3f 0%, #003366 50%, #006699 100%);
+    min-height: 100vh;
+    color: white;
+}
 
-<nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="types.html">Types</a>
-    <a href="habitats.html">Habitats</a>
-    <a href="diet.html">Diet</a>
-    <a href="gallery.html">Gallery</a>
-</nav>
+/* Top Navigation */
+.top-nav {
+    background: linear-gradient(90deg, #0a3d5c 0%, #1a5a7a 50%, #0a3d5c 100%);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
 
-<h1>Ocean Invertebrates</h1>
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-<section class="content-sections">
-    <div class="box">
-        <!-- ⭐ PERMANENT OCTOPUS IMAGE -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Octopus2.jpg" alt="Octopus">
-        <p>Octopus</p>
-    </div>
+.top-nav a:hover {
+    text-decoration: underline;
+}
 
-    <div class="box">
-        <!-- ⭐ PERMANENT JELLYFISH IMAGE -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Jelly_cc11.jpg" alt="Jellyfish">
-        <p>Jellyfish</p>
-    </div>
+/* Page Title */
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 42px;
+    color: #e0f7fa;
+    text-shadow: 2px 2px 4px rgba(0, 50, 80, 0.5);
+    font-weight: 300;
+    letter-spacing: 3px;
+}
 
-    <div class="box">
-        <!-- ⭐ PERMANENT LOBSTER IMAGE -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Homarus_americanus.png" alt="Lobster">
-        <p>Crustaceans</p>
-    </div>
-</section>
+/* ORIGINAL LAYOUT — FLEXBOX, NOT GRID */
+.content-sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
 
-<section class="full-content">
-    <h2>About Invertebrates</h2>
-    <p>Invertebrates make up 97% of all ocean species. They include octopuses, jellyfish, crabs, corals, and more.</p>
+.box {
+    width: 250px;
+    background: linear-gradient(135deg, #0a4a6e 0%, #1a6b8a 50%, #0d5c7a 100%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 100, 150, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    <div class="image-gallery">
-        <!-- ⭐ PERMANENT OCTOPUS IMAGE -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Octopus2.jpg" alt="Octopus">
+.box img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
 
-        <!-- ⭐ PERMANENT JELLYFISH IMAGE -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Jelly_cc11.jpg" alt="Jellyfish">
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 150, 200, 0.6);
+}
 
-        <!-- ⭐ PERMANENT CORAL IMAGE -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Coral_reef.jpg" alt="Coral Reef">
-    </div>
-</section>
+/* Full Content Section */
+.full-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
 
-</body>
-</html>
+/* ORIGINAL GALLERY — FLEXBOX */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Gallery Page */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.gallery img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
