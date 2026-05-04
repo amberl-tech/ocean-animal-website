@@ -3,49 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean Animals</title>
+    <title>Explore Ocean Animals</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<!-- RESTORED NAVIGATION BAR -->
+<!-- NAV -->
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="#">Pages ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="habitats.html">Habitats</a></li>
-                <li><a href="diet.html">Diet</a></li>
-                <li><a href="types.html">Types</a></li>
-            </ul>
-        </li>
-    </ul>
+    <div class="nav-inner">
+        <div class="logo">Ocean Animals</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="types.html">Types</a>
+                <div class="dropdown-menu">
+                    <a href="types.html#fish">Fish</a>
+                    <a href="types.html#mammals">Mammals</a>
+                    <a href="types.html#reptiles">Reptiles</a>
+                    <a href="types.html#invertebrates">Invertebrates</a>
+                </div>
+            </li>
+            <li>
+                <a href="habitats.html">Habitats</a>
+                <div class="dropdown-menu">
+                    <a href="habitats.html#coral">Coral Reefs</a>
+                    <a href="habitats.html#open-ocean">Open Ocean</a>
+                    <a href="habitats.html#deep-sea">Deep Sea</a>
+                    <a href="habitats.html#coastal">Coastal Waters</a>
+                </div>
+            </li>
+            <li>
+                <a href="diet.html">Diet</a>
+                <div class="dropdown-menu">
+                    <a href="diet.html#herbivores">Herbivores</a>
+                    <a href="diet.html#carnivores">Carnivores</a>
+                    <a href="diet.html#omnivores">Omnivores</a>
+                    <a href="diet.html#filter">Filter Feeders</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
-<header>
-    <h1>Ocean Animals</h1>
-</header>
+<div class="page-wrapper">
+    <header class="page-header">
+        <h1>Explore Ocean Animals</h1>
+        <p>Discover the incredible world beneath the waves.</p>
+    </header>
 
-<section class="intro">
-    <p>Explore the fascinating world of ocean animals and their habitats.</p>
-</section>
+    <div class="section-box">
+        <div class="image-row">
+            <div class="image-card">
+                <img src="images/humpback whale.jpg" alt="Humpback Whale">
+                <h3>Humpback Whale</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/dolphin.jpg" alt="Dolphin">
+                <h3>Marine Mammal</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/octopus.jpg" alt="Octopus">
+                <h3>Octopus</h3>
+            </div>
+        </div>
 
-<!-- RESTORED ORIGINAL IMAGE SET (NO DOLPHIN HERE) -->
-<section class="image-grid">
-    <img src="images/whale.jpg" alt="Whale">
-    <img src="images/humpback whale.jpg" alt="Humpback Whale">
-    <img src="images/marine mammal.jpg" alt="Marine Mammal">
-    <img src="images/octopus.jpg" alt="Octopus">
-    <img src="images/squid.jpg" alt="Squid">
-</section>
+        <div class="section-box" style="margin-top:20px;">
+            <h2>Welcome to the Ocean</h2>
+            <p>
+                Discover the incredible world beneath the waves—from tiny plankton to giant whales.
+                Explore habitats, diets, and the amazing diversity of marine life.
+            </p>
+        </div>
 
-<footer>
-    <p>Group Members: Draven Addison, Jason Eau Clair, Alexandria Zitting, Amber Lewis</p>
-    <p>Group # 1</p>
-    <p>Submitted by: Amber Lewis</p>
-</footer>
+        <div class="image-row">
+            <div class="image-card">
+                <img src="images/humpback whale.jpg" alt="Humpback Whale">
+                <h3>Breaching Whale</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/dolphin.jpg" alt="Dolphin">
+                <h3>Playful Dolphin</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/whale.jpg" alt="Whale Underwater">
+                <h3>Deep Diver</h3>
+            </div>
+        </div>
 
+        <!-- Interactive fact (JavaScript requirement) -->
+        <div class="fact-section">
+            <button type="button" onclick="showRandomFact()">Show Ocean Fun Fact</button>
+            <div id="fact-display"></div>
+        </div>
+    </div>
+
+    <footer>
+        Group Members: Draven Addison, Jason Eau Clair, Alexandria Zitting, Amber Lewis<br>
+        Group #1 — Submitted by: Amber Lewis
+    </footer>
+</div>
 </body>
 </html>
