@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean Animals - Home</title>
+    <title>Explore Ocean Animals</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NEW TWO-LEVEL NAV BAR -->
+<!-- NAVIGATION BAR -->
 <nav class="navbar">
   <ul class="main-menu">
     <li><a href="index.html">Home</a></li>
@@ -24,19 +24,51 @@
   </ul>
 </nav>
 
-<h1 id="welcomeMessage">Ocean Animals</h1>
+<h1>Explore Ocean Animals</h1>
 
-<!-- HOME PAGE IMAGE BOXES -->
+<!-- TOP THREE BOXES -->
 <div class="content-sections">
 
     <div class="box">
-        <img src="images/whale.jpg" alt="Whale">
-        Whale
+        <img src="images/humpback whale.jpg" alt="Humpback Whale">
+        <p>Humpback Whale</p>
     </div>
 
     <div class="box">
         <img src="images/marine mammal.jpg" alt="Marine Mammal">
-        Marine Mammal
+        <p>Marine Mammal</p>
+    </div>
+
+    <div class="box">
+        <img src="images/octopus.jpg" alt="Octopus">
+        <p>Octopus</p>
+    </div>
+
+</div>
+
+<!-- WELCOME SECTION -->
+<section class="welcome">
+    <h2>Welcome to the Ocean</h2>
+    <p>
+        Discover the incredible world beneath the waves — from tiny plankton to giant whales. 
+        Explore habitats, diets, and the amazing diversity of marine life. 
+        The ocean is home to millions of species, each adapted to survive in unique underwater environments.
+    </p>
+</section>
+
+<!-- THREE IMAGES UNDER WELCOME TEXT -->
+<div class="content-sections">
+
+    <div class="box">
+        <img src="images/humpback whale.jpg" alt="Whale Breaching">
+    </div>
+
+    <div class="box">
+        <img src="images/dolphin.jpg" alt="Dolphin">
+    </div>
+
+    <div class="box">
+        <img src="images/whale.jpg" alt="Whale Underwater">
     </div>
 
 </div>
@@ -58,16 +90,14 @@
 
 <p id="formStatus"></p>
 
-<!-- FOOTER WITH GROUP MEMBERS -->
+<!-- FOOTER -->
 <footer>
   <p>Group Members: Draven Addison, Jason Eau Clair, Alexandria Zitting, Amber Lewis</p>
   <p>Group Number: #</p>
   <p>Submitted by: Amber Lewis</p>
 </footer>
 
-<!-- SCRIPT -->
-<script src="script.js"></script>
-
+<!-- JAVASCRIPT -->
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
