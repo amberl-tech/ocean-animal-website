@@ -16,44 +16,31 @@
         <li><a href="diet.html">Diet</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
-
-        <li class="dropdown">
-            <a href="#">Pages ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="types.html">Types</a></li>
-                <li><a href="habitats.html">Habitats</a></li>
-                <li><a href="diet.html">Diet</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </li>
     </ul>
 </nav>
 
 <h1>Contact Us</h1>
-<p>Have questions about ocean animals or our website? Send us a message!</p>
+<p>If you have any questions, feel free to reach out using the form below.</p>
 
-<form id="contact-form">
-    <label for="name">Name:</label>
-    <input id="name" type="text" required>
+<form>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input id="email" type="email" required>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" rows="4" required></textarea>
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
     <button type="submit">Submit</button>
 </form>
 
-<h2>Random Ocean Fact</h2>
-<button id="fact-button">Show Me a Fact</button>
-<div id="fact-output"></div>
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Your message has been sent!");
+});
+</script>
 
-<h2>Group Members</h2>
-<p>Amber Lewis<br> (Add your group members here)</p>
-
-<script src="script.js"></script>
 </body>
 </html>
