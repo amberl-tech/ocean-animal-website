@@ -1,62 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gallery - Ocean Animals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Animals - Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="types.html">Types</a>
-    <a href="habitats.html">Habitats</a>
-    <a href="diet.html">Diet</a>
-    <a href="gallery.html">Gallery</a>
+<nav class="navbar">
+  <ul class="main-menu">
+    <li><a href="index.html">Home</a></li>
+
+    <li>
+      <a href="#">Explore ▼</a>
+      <ul class="sub-menu">
+        <li><a href="types.html">Types</a></li>
+        <li><a href="habitats.html">Habitats</a></li>
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 
-<h1>Ocean Animal Gallery</h1>
+<h1>Gallery</h1>
+<p>Hover over the shark to see the rollover effect.</p>
 
-<div class="full-content">
+<img id="rollover" src="images/shark1.jpg" width="300">
 
-    <h2>Octopus</h2>
-    <div class="image-gallery">
-        <figure>
-            <img src="images/octopus.jpg" alt="Octopus">
-            <figcaption>Octopus</figcaption>
-        </figure>
-    </div>
+<script>
+document.getElementById("rollover").onmouseover = function() {
+  this.src = "images/shark2.jpg";
+}
+document.getElementById("rollover").onmouseout = function() {
+  this.src = "images/shark1.jpg";
+}
+</script>
 
-    <h2>Squid</h2>
-    <div class="image-gallery">
-        <figure>
-            <img src="images/squid.jpg" alt="Squid">
-            <figcaption>Squid</figcaption>
-        </figure>
-    </div>
-
-    <h2>Whales</h2>
-    <div class="image-gallery">
-        <figure>
-            <img src="images/whale.jpg" alt="Whale">
-            <figcaption>Whale</figcaption>
-        </figure>
-
-        <figure>
-            <img src="images/humpback whale.jpg" alt="Humpback Whale">
-            <figcaption>Humpback Whale</figcaption>
-        </figure>
-    </div>
-
-    <h2>Marine Mammals</h2>
-    <div class="image-gallery">
-        <figure>
-            <img src="images/marine mammal.jpg" alt="Marine Mammal">
-            <figcaption>Marine Mammal</figcaption>
-        </figure>
-    </div>
-
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>
-
