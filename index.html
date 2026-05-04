@@ -11,13 +11,21 @@
 <nav class="navbar">
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="types.html">Types</a></li>
+        <li><a href="habitats.html">Habitats</a></li>
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
         <li class="dropdown">
             <a href="#">Pages ▼</a>
             <ul class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="types.html">Types</a></li>
                 <li><a href="habitats.html">Habitats</a></li>
                 <li><a href="diet.html">Diet</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </li>
     </ul>
@@ -26,19 +34,29 @@
 <h1>Explore Ocean Animals</h1>
 
 <div class="grid">
-    <div><img src="images/humpback whale.jpg"><div class="label">Humpback Whale</div></div>
-    <div><img src="images/dolphin.jpg"><div class="label">Marine Mammal</div></div>
-    <div><img src="images/octopus.jpg"><div class="label">Octopus</div></div>
+    <div><img src="images/humpback whale.jpg" alt="Humpback Whale"><div class="label">Humpback Whale</div></div>
+    <div><img src="images/dolphin.jpg" alt="Marine Mammal"><div class="label">Marine Mammal</div></div>
+    <div><img src="images/octopus.jpg" alt="Octopus"><div class="label">Octopus</div></div>
 </div>
 
 <h2>Welcome to the Ocean</h2>
 <p>Discover the incredible world beneath the waves — from tiny plankton to giant whales. Explore habitats, diets, and the amazing diversity of marine life.</p>
 
 <div class="grid">
-    <img src="images/humpback whale.jpg">
-    <img src="images/dolphin.jpg">
-    <img src="images/whale.jpg">
+    <img src="images/humpback whale.jpg" alt="Humpback Whale">
+    <img src="images/dolphin.jpg" alt="Dolphin">
+    <img src="images/whale.jpg" alt="Whale">
 </div>
 
+<div class="feature-container">
+    <h2>Interactive Feature Animal</h2>
+    <p>Hover over the image to see a different ocean animal.</p>
+    <img id="feature-animal"
+         src="images/dolphin.jpg"
+         data-alt-src="images/octopus.jpg"
+         alt="Feature Ocean Animal">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
