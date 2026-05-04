@@ -1,6 +1,4 @@
-/* ============================
-   GLOBAL STYLES
-============================ */
+/* GLOBAL */
 body {
     margin: 0;
     padding: 0;
@@ -9,86 +7,102 @@ body {
     color: #00334d;
 }
 
-/* ============================
-   HEADER
-============================ */
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #005f8a;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.navbar a:hover {
+    background-color: #0077b6;
+    border-radius: 5px;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #0077b6;
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* HEADER */
 header {
     background-color: #0077b6;
     color: white;
     padding: 25px 0;
     text-align: center;
-    font-size: 28px;
-    font-weight: bold;
 }
 
-/* ============================
-   INTRO SECTION
-============================ */
+/* INTRO */
 .intro {
     text-align: center;
     padding: 20px;
-    font-size: 18px;
 }
 
-/* ============================
-   IMAGE GRIDS (ALL PAGES)
-============================ */
+/* IMAGE GRIDS */
 .image-grid,
 .gallery-grid,
 .habitat-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
     padding: 20px;
 }
 
-/* ============================
-   IMAGE SIZING
-============================ */
+/* ORIGINAL IMAGE SIZE */
 .image-grid img,
 .gallery-grid img,
 .habitat-images img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
 }
 
-.image-grid img:hover,
-.gallery-grid img:hover,
-.habitat-images img:hover {
-    transform: scale(1.05);
-}
-
-/* ============================
-   FIGURE CAPTIONS
-============================ */
-figure {
-    text-align: center;
-}
-
-figcaption {
-    margin-top: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #004d73;
-}
-
-/* ============================
-   FOOTER
-============================ */
+/* FOOTER */
 footer {
     background-color: #00334d;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    font-size: 16px;
 }
-
-   
-
-
