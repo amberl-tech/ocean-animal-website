@@ -3,42 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habitats</title>
+    <title>Ocean Habitats</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="#">Pages ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="habitats.html">Habitats</a></li>
-                <li><a href="diet.html">Diet</a></li>
-                <li><a href="types.html">Types</a></li>
-            </ul>
-        </li>
-    </ul>
+    <div class="nav-inner">
+        <div class="logo">Ocean Animals</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="types.html">Types</a>
+                <div class="dropdown-menu">
+                    <a href="types.html#fish">Fish</a>
+                    <a href="types.html#mammals">Mammals</a>
+                    <a href="types.html#reptiles">Reptiles</a>
+                    <a href="types.html#invertebrates">Invertebrates</a>
+                </div>
+            </li>
+            <li>
+                <a href="habitats.html">Habitats</a>
+                <div class="dropdown-menu">
+                    <a href="habitats.html#coral">Coral Reefs</a>
+                    <a href="habitats.html#open-ocean">Open Ocean</a>
+                    <a href="habitats.html#deep-sea">Deep Sea</a>
+                    <a href="habitats.html#coastal">Coastal Waters</a>
+                </div>
+            </li>
+            <li>
+                <a href="diet.html">Diet</a>
+                <div class="dropdown-menu">
+                    <a href="diet.html#herbivores">Herbivores</a>
+                    <a href="diet.html#carnivores">Carnivores</a>
+                    <a href="diet.html#omnivores">Omnivores</a>
+                    <a href="diet.html#filter">Filter Feeders</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
-<header>
-    <h1>Ocean Habitats</h1>
-</header>
+<div class="page-wrapper">
+    <header class="page-header">
+        <h1>Ocean Habitats</h1>
+        <p>The four major ocean habitats.</p>
+    </header>
 
-<section class="intro">
-    <p>Learn about the different habitats where ocean animals live.</p>
-</section>
+    <div class="section-box">
+        <h2>The Four Major Ocean Habitats</h2>
+        <p>
+            Ocean habitats are diverse environments that support a wide variety of marine life.
+            Each habitat has unique characteristics, species, and ecological roles. Understanding
+            these habitats helps us appreciate the complexity and importance of ocean ecosystems.
+        </p>
 
-<section class="habitat-images">
-    <img src="images/dolphin.jpg" alt="Dolphin">
-    <img src="images/whale.jpg" alt="Whale">
-    <img src="images/humpback whale.jpg" alt="Humpback Whale">
-    <img src="images/marine mammal.jpg" alt="Marine Mammal">
-    <img src="images/octopus.jpg" alt="Octopus">
-    <img src="images/squid.jpg" alt="Squid">
-</section>
+        <div class="image-row">
+            <div class="image-card">
+                <img src="images/humpback whale.jpg" alt="Whale">
+                <h3>Open Ocean</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/dolphin.jpg" alt="Dolphin">
+                <h3>Coastal Waters</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/octopus.jpg" alt="Octopus">
+                <h3>Coral Reefs</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/squid.jpg" alt="Squid">
+                <h3>Deep Sea</h3>
+            </div>
+            <div class="image-card">
+                <img src="images/whale.jpg" alt="Whale Underwater">
+                <h3>Polar Seas</h3>
+            </div>
+        </div>
+    </div>
 
+    <div class="section-box" id="coral">
+        <h2>Coral Reefs</h2>
+        <p>
+            Coral reefs are often called the “rainforests of the sea” due to their incredible biodiversity.
+            These vibrant ecosystems are built by tiny animals called polyps that secrete calcium carbonate
+            skeletons over generations.
+        </p>
+        <div class="image-row">
+            <div class="image-card">
+                <img src="images/humpback whale.jpg" alt="Whale">
+                <h3>Reef Visitor</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Group Members: Draven Addison, Jason Eau Clair, Alexandria Zitting, Amber Lewis
+    </footer>
+</div>
 </body>
 </html>
