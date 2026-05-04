@@ -3,107 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Ocean Animals</title>
+    <title>Ocean Animals</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NAVIGATION BAR -->
-<nav class="navbar">
-  <ul class="main-menu">
-    <li><a href="index.html">Home</a></li>
-    <li>
-      <a href="#">Explore ▼</a>
-      <ul class="sub-menu">
-        <li><a href="types.html">Types</a></li>
-        <li><a href="habitats.html">Habitats</a></li>
-        <li><a href="diet.html">Diet</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<header>
+    <h1>Ocean Animals</h1>
+</header>
 
-<h1>Explore Ocean Animals</h1>
-
-<!-- TOP THREE BOXES -->
-<div class="content-sections">
-
-    <div class="box">
-        <img src="images/humpback whale.jpg" alt="Humpback Whale">
-        <p>Humpback Whale</p>
-    </div>
-
-    <div class="box">
-        <img src="images/marine mammal.jpg" alt="Marine Mammal">
-        <p>Marine Mammal</p>
-    </div>
-
-    <div class="box">
-        <img src="images/octopus.jpg" alt="Octopus">
-        <p>Octopus</p>
-    </div>
-
-</div>
-
-<!-- WELCOME SECTION -->
-<section class="welcome">
-    <h2>Welcome to the Ocean</h2>
-    <p>
-        Discover the incredible world beneath the waves — from tiny plankton to giant whales. 
-        Explore habitats, diets, and the amazing diversity of marine life. 
-        The ocean is home to millions of species, each adapted to survive in unique underwater environments.
-    </p>
+<section class="intro">
+    <p>Explore the fascinating world of ocean animals and their habitats.</p>
 </section>
 
-<!-- THREE IMAGES UNDER WELCOME TEXT -->
-<div class="content-sections">
+<section class="image-grid">
+    <img src="images/dolphin.jpg" alt="Dolphin">
+    <img src="images/whale.jpg" alt="Whale">
+    <img src="images/humpback whale.jpg" alt="Humpback Whale">
+    <img src="images/marine mammal.jpg" alt="Marine Mammal">
+    <img src="images/octopus.jpg" alt="Octopus">
+    <img src="images/squid.jpg" alt="Squid">
+</section>
 
-    <div class="box">
-        <img src="images/humpback whale.jpg" alt="Whale Breaching">
-    </div>
-
-    <div class="box">
-        <img src="images/dolphin.jpg" alt="Dolphin">
-    </div>
-
-    <div class="box">
-        <img src="images/whale.jpg" alt="Whale Underwater">
-    </div>
-
-</div>
-
-<!-- CONTACT FORM -->
-<h2>Contact Us</h2>
-<form id="contactForm">
-  <label>Name:</label><br>
-  <input type="text" id="name" required><br><br>
-
-  <label>Email:</label><br>
-  <input type="email" id="email" required><br><br>
-
-  <label>Message:</label><br>
-  <textarea id="message" required></textarea><br><br>
-
-  <button type="submit">Submit</button>
-</form>
-
-<p id="formStatus"></p>
-
-<!-- FOOTER -->
 <footer>
-  <p>Group Members: Draven Addison, Jason Eau Clair, Alexandria Zitting, Amber Lewis</p>
-  <p>Group  1</p>
-  <p>Submitted by: Amber Lewis</p>
+    <p>Group Members: Draven Addison, Jason Eau Clair, Alexandria Zitting, Amber Lewis</p>
+    <p>Group # 1</p>
+    <p>Submitted by: Amber Lewis</p>
 </footer>
-
-<!-- JAVASCRIPT -->
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  document.getElementById("formStatus").textContent = "Thank you! Your message has been received.";
-});
-</script>
 
 </body>
 </html>
