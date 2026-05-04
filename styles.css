@@ -7,7 +7,7 @@ body {
     color: white;
 }
 
-/* NAVIGATION BAR */
+/* NAVIGATION BAR (TWO-LEVEL) */
 .navbar {
     background-color: #006ea1;
     padding: 15px 0;
@@ -29,7 +29,7 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     padding: 8px 12px;
 }
@@ -38,24 +38,25 @@ body {
     text-decoration: underline;
 }
 
-/* DROPDOWN MENU */
+/* DROPDOWN MENU (LEVEL 2) */
 .dropdown-menu {
     display: none;
     position: absolute;
     background-color: #0077b6;
     padding: 10px 0;
     border-radius: 5px;
-    min-width: 150px;
+    min-width: 160px;
     z-index: 1000;
 }
 
 .dropdown-menu li {
     display: block;
+    margin: 0;
 }
 
 .dropdown-menu a {
     display: block;
-    padding: 10px;
+    padding: 8px 12px;
     text-align: left;
 }
 
@@ -66,20 +67,20 @@ body {
 /* TITLES */
 h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 42px;
     margin-top: 20px;
 }
 
 h2 {
     text-align: center;
-    font-size: 32px;
-    margin-top: 40px;
+    font-size: 28px;
+    margin-top: 30px;
 }
 
 /* PARAGRAPHS */
 p {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     width: 80%;
     margin: 10px auto;
 }
@@ -111,7 +112,7 @@ p {
     margin: 30px auto;
 }
 
-/* FIX IMAGE SIZE ON ALL PAGES */
+/* IMAGE SIZE (ALL GRIDS) */
 .grid img,
 .grid-4 img,
 .grid-5 img {
@@ -121,22 +122,99 @@ p {
     border-radius: 10px;
 }
 
-/* LABELS */
+/* LABELS UNDER IMAGES */
 .label {
     text-align: center;
-    font-size: 22px;
-    margin-top: 8px;
+    font-size: 18px;
+    margin-top: 6px;
     font-weight: bold;
 }
 
 /* SUBNAV (DIET PAGE) */
 .subnav {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .subnav a {
     color: #dff6ff;
     margin: 0 10px;
+    font-size: 16px;
+}
+
+/* FEATURE IMAGE (ROLLOVER) */
+.feature-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feature-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+}
+
+/* FORM */
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #0077b6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #003f63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00293f;
+}
+
+/* FACT BUTTON / OUTPUT */
+#fact-button {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px 20px;
+    background-color: #003f63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#fact-button:hover {
+    background-color: #00293f;
+}
+
+#fact-output {
+    text-align: center;
     font-size: 18px;
+    margin-top: 10px;
 }
