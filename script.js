@@ -1,38 +1,60 @@
-// Random ocean facts for homepage
-const facts = [
-    "Humpback whales use complex songs to communicate across long distances.",
+// SIMPLE OCEAN FACTS
+const oceanFacts = [
+    "Humpback whales can travel thousands of miles during migration.",
+    "Dolphins use echolocation to navigate and hunt for food.",
     "Octopuses have three hearts and blue blood.",
-    "Dolphins are highly intelligent marine mammals that live in social groups.",
-    "Squid can move by jet propulsion, pushing water out of their mantle.",
-    "Coral reefs support more species per unit area than any other marine habitat."
+    "Squid are some of the fastest invertebrates in the ocean.",
+    "Whales are mammals and must come to the surface to breathe air."
 ];
 
-function showRandomFact() {
-    const el = document.getElementById("fact-display");
-    if (!el) return;
-    const index = Math.floor(Math.random() * facts.length);
-    el.textContent = facts[index];
-}
+// RANDOM FACT BUTTON
+document.addEventListener("DOMContentLoaded", function () {
+    const factButton = document.getElementById("fact-button");
+    const factOutput = document.getElementById("fact-output");
 
-// Simple contact form validation
-function validateContactForm(event) {
-    const form = event.target;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-
-    if (!name || !email || !message) {
-        alert("Please fill out all fields before submitting.");
-        event.preventDefault();
-        return;
+    if (factButton && factOutput) {
+        factButton.addEventListener("click", function () {
+            const index = Math.floor(Math.random() * oceanFacts.length);
+            factOutput.textContent = oceanFacts[index];
+        });
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        alert("Please enter a valid email address.");
-        event.preventDefault();
-        return;
+    // IMAGE ROLLOVER (INTERACTIVE IMAGE FEATURE)
+    const featureImg = document.getElementById("feature-animal");
+    if (featureImg && featureImg.dataset.altSrc) {
+        const originalSrc = featureImg.src;
+        const altSrc = featureImg.dataset.altSrc;
+
+        featureImg.addEventListener("mouseover", function () {
+            featureImg.src = altSrc;
+        });
+
+        featureImg.addEventListener("mouseout", function () {
+            featureImg.src = originalSrc;
+        });
     }
 
-    alert("Thank you! Your message has been submitted.");
-}
+    // SIMPLE FORM VALIDATION
+    const contactForm = document.getElementById("contact-form");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const message = document.getElementById("message");
+
+            if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+                alert("Please fill out all fields before submitting.");
+                e.preventDefault();
+                return;
+            }
+
+            if (!email.value.includes("@")) {
+                alert("Please enter a valid email address.");
+                e.preventDefault();
+                return;
+            }
+
+            alert("Thank you! Your message has been submitted.");
+        });
+    }
+});
