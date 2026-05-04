@@ -1,63 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ocean Animals</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Animals - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="types.html">Types</a>
-    <a href="habitats.html">Habitats</a>
-    <a href="diet.html">Diet</a>
-    <a href="fun-facts.html">Fun Facts</a>
-    <a href="gallery.html">Gallery</a>
+<!-- TWO-LEVEL NAV BAR -->
+<nav class="navbar">
+  <ul class="main-menu">
+    <li><a href="index.html">Home</a></li>
+
+    <li>
+      <a href="#">Explore ▼</a>
+      <ul class="sub-menu">
+        <li><a href="types.html">Types</a></li>
+        <li><a href="habitats.html">Habitats</a></li>
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 
-<h1>Explore Ocean Animals</h1>
+<h1 id="welcomeMessage">Ocean Animals</h1>
+<p>Welcome to the Ocean Animals website! Explore different types of sea creatures, their habitats, diets, and view our gallery.</p>
 
-<div class="page-wrapper">
+<!-- WEB FORM -->
+<h2>Contact Us</h2>
+<form id="contactForm">
+  <label>Name:</label><br>
+  <input type="text" id="name" required><br><br>
 
-    <!-- ⭐ BLUE BOX GRID -->
-    <section class="content-sections">
+  <label>Email:</label><br>
+  <input type="email" id="email" required><br><br>
 
-        <div class="box">
-            <img src="images/humpback whale.jpg" alt="Humpback Whale">
-            <p>Humpback Whale</p>
-        </div>
+  <label>Message:</label><br>
+  <textarea id="message" required></textarea><br><br>
 
-        <div class="box">
-            <img src="images/marine mammal.jpg" alt="Marine Mammal">
-            <p>Marine Mammal</p>
-        </div>
+  <button type="submit">Submit</button>
+</form>
 
-        <div class="box">
-            <img src="images/octopus.jpg" alt="Octopus">
-            <p>Octopus</p>
-        </div>
+<p id="formStatus"></p>
 
-    </section>
+<!-- GROUP INFO -->
+<footer>
+  <p>Group Members: Amber Lewis, [Name], [Name]</p>
+  <p>Group Number: #</p>
+  <p>Submitted by: Amber Lewis</p>
+</footer>
 
-    <!-- ⭐ MAIN CONTENT -->
-    <section class="full-content">
-        <h2>Welcome to the Ocean</h2>
-        <p>
-            Discover the incredible world beneath the waves — from tiny plankton to giant whales.
-            Explore habitats, diets, and the amazing diversity of marine life.
-        </p>
+<script src="script.js"></script>
 
-        <!-- ⭐ GALLERY -->
-        <div class="image-gallery">
-            <img src="images/humpback whale.jpg" alt="Humpback Whale">
-            <img src="images/marine mammal.jpg" alt="Marine Mammal">
-            <img src="images/whale.jpg" alt="Whale">
-        </div>
-    </section>
-
-</div>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  document.getElementById("formStatus").textContent = "Thank you! Your message has been received.";
+});
+</script>
 
 </body>
 </html>
-
 
