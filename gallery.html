@@ -3,38 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Ocean Animal Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="#">Pages ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="habitats.html">Habitats</a></li>
-                <li><a href="diet.html">Diet</a></li>
-                <li><a href="types.html">Types</a></li>
-            </ul>
-        </li>
-    </ul>
+    <div class="nav-inner">
+        <div class="logo">Ocean Animals</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="types.html">Types</a>
+                <div class="dropdown-menu">
+                    <a href="types.html#fish">Fish</a>
+                    <a href="types.html#mammals">Mammals</a>
+                    <a href="types.html#reptiles">Reptiles</a>
+                    <a href="types.html#invertebrates">Invertebrates</a>
+                </div>
+            </li>
+            <li>
+                <a href="habitats.html">Habitats</a>
+                <div class="dropdown-menu">
+                    <a href="habitats.html#coral">Coral Reefs</a>
+                    <a href="habitats.html#open-ocean">Open Ocean</a>
+                    <a href="habitats.html#deep-sea">Deep Sea</a>
+                    <a href="habitats.html#coastal">Coastal Waters</a>
+                </div>
+            </li>
+            <li>
+                <a href="diet.html">Diet</a>
+                <div class="dropdown-menu">
+                    <a href="diet.html#herbivores">Herbivores</a>
+                    <a href="diet.html#carnivores">Carnivores</a>
+                    <a href="diet.html#omnivores">Omnivores</a>
+                    <a href="diet.html#filter">Filter Feeders</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
-<header>
-    <h1>Ocean Animal Gallery</h1>
-</header>
+<div class="page-wrapper">
+    <header class="page-header">
+        <h1>Ocean Animal Gallery</h1>
+    </header>
 
-<section class="gallery-grid">
-    <img src="images/dolphin.jpg" alt="Dolphin">
-    <img src="images/whale.jpg" alt="Whale">
-    <img src="images/humpback whale.jpg" alt="Humpback Whale">
-    <img src="images/marine mammal.jpg" alt="Marine Mammal">
-    <img src="images/octopus.jpg" alt="Octopus">
-    <img src="images/squid.jpg" alt="Squid">
-</section>
+    <div class="section-box">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/dolphin.jpg" alt="Tropical Fish">
+                Tropical Fish
+            </div>
+            <div class="gallery-item">
+                <img src="images/whale.jpg" alt="Whale">
+                Whale
+            </div>
+            <div class="gallery-item">
+                <img src="images/humpback whale.jpg" alt="Sea Turtle">
+                Sea Turtle
+            </div>
+            <div class="gallery-item">
+                <img src="images/octopus.jpg" alt="Octopus">
+                Octopus
+            </div>
+            <div class="gallery-item">
+                <img src="images/squid.jpg" alt="Sea Turtle">
+                Sea Turtle
+            </div>
 
+            <div class="gallery-item">
+                <img src="images/dolphin.jpg" alt="Green Sea Turtle">
+                Green Sea Turtle
+            </div>
+            <div class="gallery-item">
+                <img src="images/octopus.jpg" alt="Jellyfish">
+                Jellyfish
+            </div>
+            <div class="gallery-item">
+                <img src="images/squid.jpg" alt="Seahorse">
+                Seahorse
+            </div>
+            <div class="gallery-item">
+                <img src="images/whale.jpg" alt="Starfish">
+                Starfish
+            </div>
+            <div class="gallery-item">
+                <img src="images/humpback whale.jpg" alt="Humpback Whale">
+                Humpback Whale
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/octopus.jpg" alt="Squid">
+                Squid
+            </div>
+            <div class="gallery-item">
+                <img src="images/squid.jpg" alt="Leatherback Turtle">
+                Leatherback Turtle
+            </div>
+            <div class="gallery-item">
+                <img src="images/whale.jpg" alt="Manta Ray">
+                Manta Ray
+            </div>
+            <div class="gallery-item">
+                <img src="images/humpback whale.jpg" alt="Angelfish">
+                Angelfish
+            </div>
+            <div class="gallery-item">
+                <img src="images/dolphin.jpg" alt="Lobster">
+                Lobster
+            </div>
+        </div>
+
+        <!-- Rollover image (interactive image feature) -->
+        <div class="rollover-wrapper">
+            <img src="images/dolphin.jpg" alt="Dolphin" class="default-img">
+            <img src="images/humpback whale.jpg" alt="Whale" class="hover-img">
+        </div>
+        <p style="text-align:center; margin-top:8px; color:#00334d;">
+            Hover over the image to see a different ocean animal.
+        </p>
+    </div>
+
+    <footer>
+        Group Members: Draven Addison, Jason Eau Clair, Alexandria Zitting, Amber Lewis
+    </footer>
+</div>
 </body>
 </html>
