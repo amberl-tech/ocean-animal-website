@@ -128,3 +128,73 @@ h1 {
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 15px rgba(0, 80, 120, 0.4);
 }
+
+/* ============================
+   TWO‑LEVEL NAVIGATION BAR
+   ============================ */
+
+.navbar {
+  background-color: #005f99;
+  padding: 10px;
+  width: 100%;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu > li {
+  position: relative;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 5px;
+  display: block;
+}
+
+.main-menu a:hover {
+  color: #cceeff;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #0077cc;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.sub-menu li {
+  margin: 5px 0;
+}
+
+.sub-menu a {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.main-menu li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.main-menu li:hover .sub-menu {
+  opacity: 1;
+}
+
