@@ -8,12 +8,19 @@
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="types.html">Types</a>
-    <a href="habitats.html">Habitats</a>
-    <a href="diet.html">Diet</a>
-    <a href="gallery.html">Gallery</a>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Pages ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="types.html">Types</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="diet.html">Diet</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>
 
 <h1>Ocean Animal Diets</h1>
@@ -30,6 +37,7 @@
     <div><img src="images/octopus.jpg"><div class="label">Carnivores</div></div>
     <div><img src="images/whale.jpg"><div class="label">Omnivores</div></div>
     <div><img src="images/squid.jpg"><div class="label">Filter Feeders</div></div>
+
     <div><img src="images/humpback whale.jpg"><div class="label">Detritivores</div></div>
     <div><img src="images/dolphin.jpg"><div class="label">Parasites</div></div>
     <div><img src="images/octopus.jpg"><div class="label">Parrotfish Diet</div></div>
