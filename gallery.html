@@ -11,7 +11,6 @@
 <nav class="navbar">
   <ul class="main-menu">
     <li><a href="index.html">Home</a></li>
-
     <li>
       <a href="#">Explore ▼</a>
       <ul class="sub-menu">
@@ -25,18 +24,21 @@
 </nav>
 
 <h1>Gallery</h1>
-<p>Hover over the shark to see the rollover effect.</p>
 
-<img id="rollover" src="images/shark1.jpg" width="300">
+<div class="full-content">
+    <p>Hover over the shark to see the rollover effect.</p>
 
-<script>
-document.getElementById("rollover").onmouseover = function() {
-  this.src = "images/shark2.jpg";
-}
-document.getElementById("rollover").onmouseout = function() {
-  this.src = "images/shark1.jpg";
-}
-</script>
+    <img id="rollover" src="images/shark1.jpg" width="300">
+
+    <script>
+    document.getElementById("rollover").onmouseover = function() {
+      this.src = "images/shark2.jpg";
+    }
+    document.getElementById("rollover").onmouseout = function() {
+      this.src = "images/shark1.jpg";
+    }
+    </script>
+</div>
 
 <script src="script.js"></script>
 </body>
